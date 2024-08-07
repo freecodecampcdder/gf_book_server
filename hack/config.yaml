@@ -1,0 +1,15 @@
+# CLI tool, only in development environment.
+# https://goframe.org/pages/viewpage.action?pageId=3673173
+gfcli:
+  # 工具编译配置
+  build:
+    name: "gxs_book"
+    arch: "amd64"
+    system: "linux,windows"
+    mod: ""
+    cgo: 0
+  gen:
+    dao:
+      - link: "mysql:root:zhushuqi123@tcp(62.234.41.204:3306)/gxs_book?charset=utf8&loc=Local"
+
+

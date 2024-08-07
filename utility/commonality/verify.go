@@ -1,0 +1,5 @@
+package commonality
+
+func VerifyEmail() {
+
+}

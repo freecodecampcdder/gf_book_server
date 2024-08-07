@@ -1,0 +1,232 @@
+{
+	"info": {
+		"_postman_id": "c9744377-bbc7-48ee-8125-cafcae8b7978",
+		"name": "gxs-book",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "app",
+			"item": [
+				{
+					"name": "user",
+					"item": [
+						{
+							"name": "用户详情修改",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer LlsL8dp2x4USlGZkRHi9Zn7a61UtbD/mj7NZS4mznRQcMjMUXB0jKQGqw539u4bi",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"avatar\":\"www.123.com/123.png\",\r\n    \"nickname\":\"郭星铄的图书管理\",\r\n    \"phone\":\"18254705629\",\r\n    \"email\":\"363301318@qq.com\",\r\n    \"description\":\"祝我早日完成.\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{gxsLocal}}/v1/app/user/info",
+									"host": [
+										"{{gxsLocal}}"
+									],
+									"path": [
+										"v1",
+										"app",
+										"user",
+										"info"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "用户详情",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer LlsL8dp2x4USlGZkRHi9Zn7a61UtbD/mj7NZS4mznRQcMjMUXB0jKQGqw539u4bi",
+										"type": "default"
+									}
+								],
+								"url": {
+									"raw": "{{gxsLocal}}/v1/app/user/info",
+									"host": [
+										"{{gxsLocal}}"
+									],
+									"path": [
+										"v1",
+										"app",
+										"user",
+										"info"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "修改密码",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer LlsL8dp2x4USlGZkRHi9Zn7a61UtbD/mj7NZS4mznRQcMjMUXB0jKQGqw539u4bi",
+										"type": "default"
+									}
+								],
+								"url": {
+									"raw": "{{gxsLocal}}/v1/app/user/password",
+									"host": [
+										"{{gxsLocal}}"
+									],
+									"path": [
+										"v1",
+										"app",
+										"user",
+										"password"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "修改推送开关",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer LlsL8dp2x4USlGZkRHi9Zn7a61UtbD/mj7NZS4mznRQcMjMUXB0jKQGqw539u4bi",
+										"type": "default"
+									}
+								],
+								"url": {
+									"raw": "{{gxsLocal}}/v1/app/user/push",
+									"host": [
+										"{{gxsLocal}}"
+									],
+									"path": [
+										"v1",
+										"app",
+										"user",
+										"push"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "公共",
+					"item": [
+						{
+							"name": "用户注册",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"user_name\":\"363301318@qq.com\",\r\n    \"password\":\"123456\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{gxsLocal}}/v1/app/user/register",
+									"host": [
+										"{{gxsLocal}}"
+									],
+									"path": [
+										"v1",
+										"app",
+										"user",
+										"register"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "用户登录",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"user_name\":\"363301318@qq.com\",\r\n    \"password\":\"123456\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{gxsLocal}}/v1/app/login",
+									"host": [
+										"{{gxsLocal}}"
+									],
+									"path": [
+										"v1",
+										"app",
+										"login"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "七牛",
+					"item": [
+						{
+							"name": "获取token",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer LlsL8dp2x4USlGZkRHi9Zn7a61UtbD/mj7NZS4mznRQcMjMUXB0jKQGqw539u4bi",
+										"type": "default"
+									}
+								],
+								"url": {
+									"raw": "{{gxsLocal}}/v1/app/qiniu/token",
+									"host": [
+										"{{gxsLocal}}"
+									],
+									"path": [
+										"v1",
+										"app",
+										"qiniu",
+										"token"
+									],
+									"query": [
+										{
+											"key": "",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}

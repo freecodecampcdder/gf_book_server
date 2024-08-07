@@ -1,0 +1,34 @@
+server:
+  address: ":8000"
+  openapiPath: "/api.json"
+  swaggerPath: "/swagger"
+
+logger:
+  level: "all"
+  stdout: true
+
+# 数据库连接配置
+database:
+  default:
+    #链接
+    link: "mysql:root:zhushuqi123@tcp(62.234.41.204:3306)/gxs_book?charset=utf8&loc=Local"
+    debug: true
+  logger:
+    level: "all"
+    stdout: true
+
+# Redis 配置示例
+redis:
+  default:
+    address: 127.0.0.1:6379
+    db: 0
+    pass:
+    idleTimeout: 600
+
+qiniu:
+  bucket: "gxs-book-image"
+  accessKey: "H5nYQA00Wj2v1qM4LItzpRF8GFxtCgviE2Rkv9ht"
+  secretKey: "cVeZenhur1lL04jKhJNFYW9ydqfAve2RSaP6-QX7"
+  url: "http://img.zhushuqi.cn/"
+
+
